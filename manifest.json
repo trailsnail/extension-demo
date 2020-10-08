@@ -1,0 +1,22 @@
+{
+  "browser_action": {
+    "browser_style": true,
+    "default_title": "Δ-Page"
+  },
+  "manifest_version": 2,
+  "name": "modify-page",
+  "version": "1.0",
+
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "https://github.com/*",
+    "https://api.github.com/*",
+    "https://render.githubusercontent.com/*"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+
+}
