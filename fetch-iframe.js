@@ -14,7 +14,6 @@ fetch(iFrameContent.src, settings)
     .then(function (data) {
         var myDiv = document.createElement('div');
         myDiv.innerHTML = data;
-        console.log(myDiv);
 
         document.querySelector('.render-wrapper').appendChild(myDiv);
     })
